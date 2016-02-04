@@ -14,7 +14,7 @@ AVN::cCoordinatePosition::cCoordinatePosition() :
 {
 }
 
-bool AVN::cCoordinatePosition::compareLabel(cCoordinatePosition oPos1, cCoordinatePosition oPos2)
+bool AVN::cCoordinatePosition::compareLabel(const cCoordinatePosition &oPos1, const cCoordinatePosition &oPos2)
 {
     //Invert the output of compare function for alphabetically ascending:
     return !oPos1.m_strLabel.compare(oPos2.m_strLabel);

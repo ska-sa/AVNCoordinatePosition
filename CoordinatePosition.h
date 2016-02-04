@@ -23,7 +23,7 @@ struct cCoordinatePosition
     cCoordinatePosition();
 
     //Compared function on labels for sorting vectors of cCoordinatePostion by label
-    static bool compareLabel(cCoordinatePosition oPos1, cCoordinatePosition oPos2);
+    static bool compareLabel(const cCoordinatePosition &oPos1, const cCoordinatePosition &oPos2);
 
     //Convert from decimal degrees to DMS
     static void decimalDegreesToDMS(double dDecimalDegrees, int32_t &i32Degrees, int32_t &i32Minutes, double &dSeconds);
